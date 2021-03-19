@@ -5,25 +5,25 @@
 class Iamlive < Formula
   desc "Generate an IAM policy from AWS calls using client-side monitoring (CSM) or embedded proxy."
   homepage "https://github.com/iann0036/iamlive"
-  version "0.0.11"
+  version "0.0.12"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.11/iamlive_Darwin_x86_64.zip"
-    sha256 "bd666b183e1aa29a3b101dc2e42d09018c421973a8ea7a33cca12be4561ec83f"
+    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.12/iamlive-actiontesting_0.0.12_darwin_amd64.zip"
+    sha256 "8b2036cfb0cd888c0b5aa61d58bb87bd38d5407446edca68325a696ae33d63ad"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.11/iamlive_Darwin_arm64.zip"
-    sha256 "63661e54ef66c55e845f79fb920a56bad3ef10ffdc344088d0022d8cef3bd8e8"
+    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.12/iamlive-actiontesting_0.0.12_darwin_arm64.zip"
+    sha256 "23861ef608a4e3d04dec7a7341c8726502dd7dd4cd4b2c47ccb0c5cf87865058"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.11/iamlive_Linux_x86_64.zip"
-    sha256 "1963620be49ee36d8d57b49d0ee73cb73fe0d4bfb9473ce7b3cc2997060e3149"
+    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.12/iamlive-actiontesting_0.0.12_linux_amd64.zip"
+    sha256 "c6a28efcd9fe83ad396e18c75a7d9545d3ab5ed0a8dbfecec5416264e262d372"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.11/iamlive_Linux_arm64.zip"
-    sha256 "eff0d3ce60f9949b31ee964082aa386694aceae4ca7a8ff4b76c331370d4a1d1"
+    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.12/iamlive-actiontesting_0.0.12_linux_arm64.zip"
+    sha256 "272e19f81d15c9bbdc77a75d481fa797ff5bab23df263e80b177a35ccdb53003"
   end
 
   def install
