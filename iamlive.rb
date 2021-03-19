@@ -5,25 +5,25 @@
 class Iamlive < Formula
   desc "Generate an IAM policy from AWS calls using client-side monitoring (CSM) or embedded proxy."
   homepage "https://github.com/iann0036/iamlive"
-  version "0.0.28"
+  version "0.0.29"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.0.28/iamlive_darwin_amd64.zip"
-    sha256 "50e0acce942e32169bfe99c3f4743158a3078bed994f1eb9e2f39154a6cbfe06"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.29/iamlive_darwin_amd64.zip"
+    sha256 "7b789c6c18b4e128f29a3f38b434c7339d97537619f14f4c6e15691e21f42754"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.0.28/iamlive_darwin_arm64.zip"
-    sha256 "05fb5118dd92e86d55a1f62d8309bc416ad40854f33d1eacf80fbefc75a4b1d0"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.29/iamlive_darwin_arm64.zip"
+    sha256 "36eb88281bf3c96da53a1fbb9a24bee839c0d47a6d9d1d62a125552b0b3ca08c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.0.28/iamlive_linux_amd64.zip"
-    sha256 "d12f8bdfded35b755c9471311fd420b671724d2306829eb0e9a3fc1fae23ffd6"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.29/iamlive_linux_amd64.zip"
+    sha256 "3a5fc4d22cbacb0e1ea93e51520434dbfc265a54c40baac001e7ac5cdb057ff0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.0.28/iamlive_linux_arm64.zip"
-    sha256 "4ac47e3b0204de9097a55e5f61d38fd237eb7e47ed07a1ab03f0079714809b1f"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.29/iamlive_linux_arm64.zip"
+    sha256 "fce5d9227d6e146eb863680a72ae93174e9fe6b1b37e94e62ce113d21a609105"
   end
 
   def install
