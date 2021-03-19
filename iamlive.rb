@@ -5,25 +5,25 @@
 class Iamlive < Formula
   desc "Generate an IAM policy from AWS calls using client-side monitoring (CSM) or embedded proxy."
   homepage "https://github.com/iann0036/iamlive"
-  version "0.0.12"
+  version "0.0.13"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.12/iamlive-actiontesting_0.0.12_darwin_amd64.zip"
-    sha256 "8b2036cfb0cd888c0b5aa61d58bb87bd38d5407446edca68325a696ae33d63ad"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.13/iamlive-actiontesting_0.0.13_darwin_amd64.zip"
+    sha256 "72a58fdd8c48b6c0dca6f65d9d0cff39984927aebf38527799e6f059491871dd"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.12/iamlive-actiontesting_0.0.12_darwin_arm64.zip"
-    sha256 "23861ef608a4e3d04dec7a7341c8726502dd7dd4cd4b2c47ccb0c5cf87865058"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.13/iamlive-actiontesting_0.0.13_darwin_arm64.zip"
+    sha256 "aecd9a27f9395b4d4f3b852dc449d3607003b48ec5f31c6dfe2e0f79b31282e1"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.12/iamlive-actiontesting_0.0.12_linux_amd64.zip"
-    sha256 "c6a28efcd9fe83ad396e18c75a7d9545d3ab5ed0a8dbfecec5416264e262d372"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.13/iamlive-actiontesting_0.0.13_linux_amd64.zip"
+    sha256 "4d8307749c779140183dc59556d6af3b0c31df57eea3cfdcced742ce160f6126"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/homebrew-iamlive/releases/download/v0.0.12/iamlive-actiontesting_0.0.12_linux_arm64.zip"
-    sha256 "272e19f81d15c9bbdc77a75d481fa797ff5bab23df263e80b177a35ccdb53003"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.13/iamlive-actiontesting_0.0.13_linux_arm64.zip"
+    sha256 "fcb09f825ec9f7ac58eb451b66c8e8bfa6fc835c0dba9de63582280f6b0c78cb"
   end
 
   def install
