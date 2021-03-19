@@ -5,25 +5,17 @@
 class Iamlive < Formula
   desc "Generate an IAM policy from AWS calls using client-side monitoring (CSM) or embedded proxy."
   homepage "https://github.com/iann0036/iamlive"
-  version "0.0.29"
+  version "0.0.45"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.0.29/iamlive_darwin_amd64.zip"
-    sha256 "7b789c6c18b4e128f29a3f38b434c7339d97537619f14f4c6e15691e21f42754"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.45/iamlive-v0.0.45-darwin-amd64.zip"
+    sha256 "2820c81049a368b15804eb6b91c5ade47169112ce6b355a67f7f8284c4a1b424"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.0.29/iamlive_darwin_arm64.zip"
-    sha256 "36eb88281bf3c96da53a1fbb9a24bee839c0d47a6d9d1d62a125552b0b3ca08c"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.0.29/iamlive_linux_amd64.zip"
-    sha256 "3a5fc4d22cbacb0e1ea93e51520434dbfc265a54c40baac001e7ac5cdb057ff0"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.0.29/iamlive_linux_arm64.zip"
-    sha256 "fce5d9227d6e146eb863680a72ae93174e9fe6b1b37e94e62ce113d21a609105"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.0.45/iamlive-v0.0.45-darwin-arm64.zip"
+    sha256 "b89324455137db7c41eec85084439f0bf57cf0ceab75e233897929c336ba8241"
   end
 
   def install
