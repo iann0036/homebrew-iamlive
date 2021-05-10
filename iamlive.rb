@@ -4,17 +4,17 @@
 class Iamlive < Formula
   desc "Generate an IAM policy from AWS calls using client-side monitoring (CSM) or embedded proxy."
   homepage "https://github.com/iann0036/iamlive"
-  version "0.33.0"
+  version "0.34.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.33.0/iamlive-v0.33.0-darwin-amd64.zip"
-    sha256 "35f0970f849bfcac1cda2c5e0c99e1e2cbcfbe6d642691fb776df62477677201"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.34.0/iamlive-v0.34.0-darwin-amd64.zip"
+    sha256 "985459aeb32f9d8e253c625d5953bcc959c5f35299838107fbc6edde185a7aed"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v0.33.0/iamlive-v0.33.0-darwin-arm64.zip"
-    sha256 "ae4477f52c79aa1fff84a7271ff74ff1bb214b72e66db9eeb57d3f9805d51a01"
+    url "https://github.com/iann0036/iamlive/releases/download/v0.34.0/iamlive-v0.34.0-darwin-arm64.zip"
+    sha256 "29c450c3b009826e447dcbf64aaf488f66c27f65b16f26051c39cd79460e0178"
   end
 
   def install
