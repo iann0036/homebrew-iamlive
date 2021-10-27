@@ -6,7 +6,6 @@ class Iamlive < Formula
   homepage "https://github.com/iann0036/iamlive"
   version "0.42.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/iann0036/iamlive/releases/download/v0.42.0/iamlive-v0.42.0-darwin-amd64.zip"
