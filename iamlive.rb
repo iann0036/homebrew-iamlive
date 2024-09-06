@@ -4,28 +4,28 @@
 class Iamlive < Formula
   desc "Generate an IAM policy from AWS, Azure, or Google Cloud (GCP) calls using client-side monitoring (CSM) or embedded proxy."
   homepage "https://github.com/iann0036/iamlive"
-  version "1.1.8"
+  version "1.1.11"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.8/iamlive-v1.1.8-darwin-amd64.zip"
-    sha256 "8e98d75d27ff1854c95a19bbf0a247748ccd1d83b3b38fddea12f83270796b4e"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.11/iamlive-v1.1.11-darwin-amd64.zip"
+    sha256 "ef10bf421a9a4a02b7975be7577d3dbcfd98cb2e818edde5592d8a12f8ea2cc3"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.8/iamlive-v1.1.8-darwin-arm64.zip"
-    sha256 "5c11c2ee83ff164d41b513cf49325ecbda8fd95dfbe1274710d28cb0d25a84c3"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.11/iamlive-v1.1.11-darwin-arm64.zip"
+    sha256 "097098f11eab8e388bfb484a9116d3cf00f7f90e84f582bffd95c282735807e0"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.8/linux-v1.1.8-linux-386.tar.gz"
-    sha256 "d102a9c391e06b721c926109b86e653cb538b807fad72d3e58e3109c55e476fd"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.11/linux-v1.1.11-linux-386.tar.gz"
+    sha256 "fa878b5f9fcf6f9739e62c89fb9dc86de865380fed60a0f6cd66b5ba96c5ab2d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.8/linux-v1.1.8-linux-amd64.tar.gz"
-    sha256 "0a5b0fdd8a954ae0d6c016e76bdf9ea8a66995db7ec172f708295c3a0ad4ecd7"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.11/linux-v1.1.11-linux-amd64.tar.gz"
+    sha256 "9bcd7be880b2f651b88da875abf69e377fe1df8310817c8508eb8dfb682f9abd"
   end
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.8/linux-v1.1.8-linux-arm64.tar.gz"
-    sha256 "189c8d0d6709821c271a9e19e9be9bf93833db5037492ab907fdf8ec30dae161"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.11/linux-v1.1.11-linux-arm64.tar.gz"
+    sha256 "6b0e87f4c4f7945aa35840be05387ad58f5e71bf91294a87efca57db58fb63e6"
   end
 
   def install
