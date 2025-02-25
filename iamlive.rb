@@ -4,28 +4,28 @@
 class Iamlive < Formula
   desc "Generate an IAM policy from AWS, Azure, or Google Cloud (GCP) calls using client-side monitoring (CSM) or embedded proxy."
   homepage "https://github.com/iann0036/iamlive"
-  version "1.1.20"
+  version "1.1.21"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.20/iamlive-v1.1.20-darwin-amd64.zip"
-    sha256 "60b5dca7cb367af65b7c95fc41047c9f665b33076faaf66ecc5562f159b84bfe"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.21/iamlive-v1.1.21-darwin-amd64.zip"
+    sha256 "4ebf219a6f3037a3804b32258cf9bac321a9a7ff8cd695038aadafca2e3d8c42"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.20/iamlive-v1.1.20-darwin-arm64.zip"
-    sha256 "e3bd3c52049eba2e2a03469802589e185f3684659f7ec64df76d546308715c36"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.21/iamlive-v1.1.21-darwin-arm64.zip"
+    sha256 "60b42ede0d51e3279a84d84d8e30c40fdc498a66d033eb549d077a81d8d95bef"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.20/linux-v1.1.20-linux-386.tar.gz"
-    sha256 "688371472edb1db2178e2c0d3d6bb5880022a69742183d47739c643fb74dba61"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.21/linux-v1.1.21-linux-386.tar.gz"
+    sha256 "aaf26ffca7f481bb7e737ee521ce354a643c2b77c57fd4ac7f128366fbd24770"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.20/linux-v1.1.20-linux-amd64.tar.gz"
-    sha256 "4dc5377810eea2d0de99cf2079358a1a3fcf12ef867c4396ef40eba51c98876b"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.21/linux-v1.1.21-linux-amd64.tar.gz"
+    sha256 "2d78175cc1934f2e882d48c7eeb5fa81d63e3a62974ac277be3f43b8ad72668e"
   end
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.20/linux-v1.1.20-linux-arm64.tar.gz"
-    sha256 "aa6ee221c8bd6702b18e7ad4aacceceeb0f45ffb60609e289e2ed704c45cf887"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.21/linux-v1.1.21-linux-arm64.tar.gz"
+    sha256 "401fdf64815bfa0a3af0c2c0dfe7669877cb9aa91991fbc546bedc8a7c4ba5dc"
   end
 
   def install
