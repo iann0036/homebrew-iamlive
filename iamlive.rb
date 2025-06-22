@@ -15,11 +15,11 @@ class Iamlive < Formula
     url "https://github.com/iann0036/iamlive/releases/download/v1.1.25/iamlive-v1.1.25-darwin-arm64.zip"
     sha256 "3a68e587f03f97472071311f8f4ec849a5fd57da1a51837a3cb808df22d75af5"
   end
-  if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+  if OS.linux? && Hardware::CPU.intel? && !Hardware::CPU.is_64_bit?
     url "https://github.com/iann0036/iamlive/releases/download/v1.1.25/linux-v1.1.25-linux-386.tar.gz"
     sha256 "4aa12d4e1447a429e8e25ddf83f11112ff01992e88906e5d60911557775a6369"
   end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+  if OS.linux? && Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
     url "https://github.com/iann0036/iamlive/releases/download/v1.1.25/linux-v1.1.25-linux-amd64.tar.gz"
     sha256 "881c781bf6d9a231ee23e5158eb77ee823ba5bf06d3d48179147c5ed66f2994f"
   end
