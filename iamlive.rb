@@ -4,28 +4,28 @@
 class Iamlive < Formula
   desc "Generate an IAM policy from AWS, Azure, or Google Cloud (GCP) calls using client-side monitoring (CSM) or embedded proxy."
   homepage "https://github.com/iann0036/iamlive"
-  version "1.1.26"
+  version "1.1.27"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.26/iamlive-v1.1.26-darwin-amd64.zip"
-    sha256 "694274fa41a39a798990eb0ddba2443b693c5b51eb1b9145767fc665a09e2008"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.27/iamlive-v1.1.27-darwin-amd64.zip"
+    sha256 "6f830cade45e0fab8856064e7ec293579e6650387732b523e7b56653c0f16402"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.26/iamlive-v1.1.26-darwin-arm64.zip"
-    sha256 "9af848293310c75487a9128c6574b5ac0b7d57e7f798e9843a35409603fdb270"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.27/iamlive-v1.1.27-darwin-arm64.zip"
+    sha256 "fe7a74f7bbcade8174a5c5ecbe2f1f13c061b9629d5cb94e7da99711544f519a"
   end
   if OS.linux? && Hardware::CPU.intel? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.26/iamlive-v1.1.26-linux-386.tar.gz"
-    sha256 "d6310b809f6dcc539b1f4a962a5ab5f6cec1c94724af5075fae1931a1701ae29"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.27/iamlive-v1.1.27-linux-386.tar.gz"
+    sha256 "0e3c594be409d0e1abd368316752f87e71d1d63ece78ecf3dc70ed915246644e"
   end
   if OS.linux? && Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.26/iamlive-v1.1.26-linux-amd64.tar.gz"
-    sha256 "4edf412742b62768232ef964482113aba49db3a2436d64b835abadddbacbf50b"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.27/iamlive-v1.1.27-linux-amd64.tar.gz"
+    sha256 "76446c992e4526694035fa929ad6624f9a96d542a72218a1d7d953eaea1abe7d"
   end
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/iann0036/iamlive/releases/download/v1.1.26/iamlive-v1.1.26-linux-arm64.tar.gz"
-    sha256 "5cd3b425cdecf8bb230b4a3feae551366ab8096682e314886b55738a74f916f7"
+    url "https://github.com/iann0036/iamlive/releases/download/v1.1.27/iamlive-v1.1.27-linux-arm64.tar.gz"
+    sha256 "374b171cebe3caf0d6ea6e6ab07dbc6fed1cf0627230e97074209aa6093ce701"
   end
 
   def install
